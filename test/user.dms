@@ -1,0 +1,12 @@
+{
+    "description": "User info",
+    "type": "object",
+    "properties": {
+        "name": { "type": "string", "pattern": "^[a-zA-Z][a-zA-Z0-9]{3,9}$" },
+        "address.country": { "type": "string" },
+        "address.provinces": { "type": "string" },
+        "address.city": { "type": "string" },
+        "address.extend":{ "type": "string" }
+    },
+    "required": ["name"]
+}
